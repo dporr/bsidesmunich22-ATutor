@@ -1,7 +1,7 @@
 FROM php:5.4-apache
 COPY ./ /var/www/html/
 RUN docker-php-ext-install mysql\
- && docker-php-ext-install mbstring\
+ && docker-php-ext-install mbstring
 #used later during installation nad yes... they requiere 777 and a+rwx :( 
 RUN mkdir -p /var/www/html/content\
  && chmod 2777 content\
