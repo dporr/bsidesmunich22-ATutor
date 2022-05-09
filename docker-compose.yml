@@ -1,0 +1,27 @@
+version: '2'
+services:
+  application:
+    container_name: atutor_container
+    build:
+      context: ./
+      dockerfile: ./application.dockerfile
+    ports:
+        - "8080:80"
+
+  mysql:
+    container_name: mysql_container
+    build:
+      context: ./
+      dockerfile: ./mysql.dockerfile
+    restart: always   
+    environment:
+      #MYSQL_DATABASE: 'blog'
+      MYSQL_ROOT_PASSWORD: 'toor'
+      MYSQL_DEFAULT_PASS: 'toor'
+      MYSQL_DEFAULT_USER: 'root'
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql_data:/var/lib/mysql
+volumes:
+  mysql_data: {}
