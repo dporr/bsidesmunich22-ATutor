@@ -65,7 +65,7 @@ if (isset($errors)) {
 	<tr>
 		<td class="row1"><span class="required" title="Required Field">*</span><b><label for="db">Database Hostname:</label></b><br />
 			Hostname of the database server. Default: <kbd>localhost</kbd></td>
-		<td class="row1" valign="middle"><input type="text" name="db_host" id="db" value="<?php if (!empty($_POST['db_host'])) { echo stripslashes(htmlspecialchars($_POST['db_host'])); } else { echo 'localhost'; } ?>" class="formfield" /></td>
+		<td class="row1" valign="middle"><input type="text" name="db_host" id="db" value="<?php if (!empty($_POST['db_host'])) { echo stripslashes(htmlspecialchars($_POST['db_host'])); } else { echo 'mysql_container'; } ?>" class="formfield" /></td>
 	</tr>
 	<tr>
 		<td class="row1"><span class="required" title="Required Field">*</span><b><label for="port">Database Port:</label></b><br />
@@ -75,12 +75,12 @@ if (isset($errors)) {
 	<tr>
 		<td class="row1"><span class="required" title="Required Field">*</span><b><label for="username">Database Username:</label></b><br />
 			The username to the database server.</td>
-		<td class="row1"><input type="text" name="db_login" id="username" value="<?php echo stripslashes(htmlspecialchars($_POST['db_login'])); ?>" class="formfield" /></td>
+		<td class="row1"><input type="text" name="db_login" id="username" value="root" class="formfield" /></td>
 	</tr>
 	<tr>
 		<td class="row1"><span class="required" title="Required Field">*</span><b><label for="pass">Database Password:</label></b><br />
 			The password to the database server.</td>
-		<td class="row1"><input type="text" name="db_password" id="pass" value="<?php echo stripslashes(htmlspecialchars($_POST['db_password'])); ?>" class="formfield" /></td>
+		<td class="row1"><input type="text" name="db_password" id="pass" value="toor" class="formfield" /></td>
 	</tr>
 	<tr>
 		<td class="row1"><span class="required" title="Required Field">*</span><b><label for="name">Database Name:</label></b><br />

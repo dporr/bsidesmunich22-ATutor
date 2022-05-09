@@ -110,15 +110,15 @@ function encrypt_password()
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="username">Administrator Username:</label></b><br />
 			May contain only letters, numbers, or underscores.</td>
-			<td class="row1"><input type="text" name="admin_username" id="username" maxlength="20" size="20" value="<?php if (!empty($_POST['admin_username'])) { echo stripslashes(htmlspecialchars($_POST['admin_username'])); } else { echo $defaults['admin_username']; } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="admin_username" id="username" maxlength="20" size="20" value="admin" class="formfield" /></td>
 		</tr>
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="password">Administrator Password:</label></b></td>
-			<td class="row1"><input type="text" name="admin_password" id="password" maxlength="15" size="15" class="formfield" /></td>
+			<td class="row1"><input type="text" name="admin_password" id="password" value="admin" maxlength="15" size="15" class="formfield" /></td>
 		</tr>
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="email">Administrator Email:</label></b></td>
-			<td class="row1"><input type="text" name="admin_email" id="email" size="40" value="<?php if (!empty($_POST['admin_email'])) { echo stripslashes(htmlspecialchars($_POST['admin_email'])); } else { echo $defaults['admin_email']; } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="admin_email" id="email" size="40" value="admin@bsidesmunich22.localhost" class="formfield" /></td>
 		</tr>
 		</table>
 
@@ -136,7 +136,7 @@ function encrypt_password()
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="cemail">Contact Email:</label></b><br />
 			The email that will be used as the return email when needed.</td>
-			<td class="row1"><input type="text" name="email" id="cemail" size="40" value="<?php if (!empty($_POST['email'])) { echo stripslashes(htmlspecialchars($_POST['email'])); } else { echo $defaults['email']; } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="email" id="cemail" size="40" value="admin@2022.bsidesmunich.org" class="formfield" /></td>
 		</tr>
 		<tr>			
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="just_social">Just Social:</label></b><br />
@@ -165,23 +165,23 @@ function encrypt_password()
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="account_username">Username:</label></b><br />
 			May contain only letters, numbers, and underscores.</td>
-			<td class="row1"><input type="text" name="account_username" id="account_username" maxlength="20" size="20" value="<?php if (!empty($_POST['account_username'])) { echo stripslashes(htmlspecialchars($_POST['account_username'])); } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="account_username" id="account_username" maxlength="20" size="20" value="student" class="formfield" /></td>
 		</tr>
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="account_password">Password:</label></b></td>
-			<td class="row1"><input type="text" name="account_password" id="account_password" maxlength="15" size="15" class="formfield" /></td>
+			<td class="row1"><input type="text" name="account_password" id="account_password" value="password" maxlength="15" size="15" class="formfield" /></td>
 		</tr>
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="account_email">Email:</label></b></td>
-			<td class="row1"><input type="text" name="account_email" id="account_email" size="40" maxlength="60" value="<?php if (!empty($_POST['account_email'])) { echo stripslashes(htmlspecialchars($_POST['account_email'])); } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="account_email" id="account_email" size="40" maxlength="60" value="student@2022.bsidesmunich.org" class="formfield" /></td>
 		</tr>
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="account_fname">First Name:</label></b></td>
-			<td class="row1"><input type="text" name="account_fname" id="account_fname" size="40" maxlength="60" value="<?php if (!empty($_POST['account_fname'])) { echo stripslashes(htmlspecialchars($_POST['account_fname'])); } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="account_fname" id="account_fname" size="40" maxlength="60" value="student_name" class="formfield" /></td>
 		</tr>
 		<tr>
 			<td class="row1"><span class="required" title="Required Field">*</span><b><label for="account_lname">Last Name:</label></b></td>
-			<td class="row1"><input type="text" name="account_lname" id="account_lname" size="40" maxlength="60" value="<?php if (!empty($_POST['account_lname'])) { echo stripslashes(htmlspecialchars($_POST['account_lname'])); } ?>" class="formfield" /></td>
+			<td class="row1"><input type="text" name="account_lname" id="account_lname" size="40" maxlength="60" value="student_lastname" class="formfield" /></td>
 		</tr>
 		</table>
 	<br />

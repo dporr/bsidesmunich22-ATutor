@@ -105,10 +105,10 @@ if (isset($_POST['submit'])) {
 		}
 
 		$header = "POST /install_log.php HTTP/1.1\r\n";
-		$header .= "Host: atutor.ca\r\n";
+		$header .= "Host: localhost\r\n";
 		$header .= "Content-Type: application/x-www-form-urlencoded\r\n";
 		$header .= "Content-Length: " . strlen($request) . "\r\n\r\n";
-		$fp = @fsockopen('www.atutor.ca', 80, $errno, $errstr, 30);
+		$fp = @fsockopen('localhost', 6667, $errno, $errstr, 30);
 
 		if ($fp) {
 			fputs($fp, $header . $request . "\r\n\r\n");
